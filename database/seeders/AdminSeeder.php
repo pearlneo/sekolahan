@@ -19,8 +19,10 @@ class AdminSeeder extends Seeder
             'password' => Hash::make('qwe123')
         ]);
 
+        /*
         Guru::create([
             'name'
         ]);
+        */
     }
 }

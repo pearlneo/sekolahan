@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
-abstract class Controller
+use Illuminate\Routing\Controller as BaseController;
+
+abstract class Controller extends BaseController
 {
     protected function success($data, $statusCode, $message='success') {
         return response()->json([
